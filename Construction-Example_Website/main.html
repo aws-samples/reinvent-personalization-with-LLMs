@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnyCompany Consulting Personalized Page</title>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #0077b6;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      max-width: 150px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    /* Offerings Section Styles */
+    .offerings {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .offerings h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+
+    .offering-card {
+      background-color: #f5f5f5;
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    .offering-card img {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .offering-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .offering-card p {
+      font-size: 16px;
+    }
+
+    /* Pain Points Section Styles */
+    .pain-points {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .pain-points h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .pain-points-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 40px;
+    }
+
+    .pain-point-card {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    .pain-point-card img {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .pain-point-card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Testimonials Section Styles */
+    .testimonials {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* CTA Section Styles */
+    .cta {
+      background-color: #0077b6;
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .cta h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #fff;
+      color: #0077b6;
+      padding: 12px 30px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0077b6;
+      color: #fff;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .offerings-grid,
+      .pain-points-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .offerings-grid,
+      .pain-points-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="anycompany_logo.jpg" alt="AnyCompany Consulting">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Building a Sustainable Future for New York</h1>
+      <p>AnyCompany Consulting's expertise in the construction industry helps you tackle your toughest challenges.</p>
+    </section>
+
+    <section class="offerings">
+      <h2>Our Tailored Solutions for Your Construction Needs</h2>
+      <div class="offerings-grid">
+        <div class="offering-card">
+          <img src="service-icon-1.png" alt="Pre-Construction Services">
+          <h3>Pre-Construction Planning and Consulting</h3>
+          <p>Our comprehensive pre-construction services ensure seamless project planning, feasibility studies, cost estimation, and regulatory compliance analysis, laying the foundation for successful project execution.</p>
+        </div>
+        <div class="offering-card">
+          <img src="service-icon-2.png" alt="Project Management Services">
+          <h3>Expert Project Management and Oversight</h3>
+          <p>Our experienced project managers provide end-to-end oversight, ensuring efficient scheduling, risk mitigation, quality control, and timely project delivery within budget.</p>
+        </div>
+        <div class="offering-card">
+          <img src="service-icon-3.png" alt="Construction Technology Solutions">
+          <h3>Cutting-Edge Construction Technology</h3>
+          <p>We leverage the latest construction technologies, including Building Information Modeling (BIM), drones, and automation, to enhance productivity, efficiency, and safety on your projects.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pain-points">
+      <h2>Addressing Your Construction Challenges</h2>
+      <div class="pain-points-grid">
+        <div class="pain-point-card">
+          <img src="pain-point-icon-1.png" alt="Skilled Labor Shortages">
+          <h3>Skilled Labor Shortages</h3>
+        </div>
+        <div class="pain-point-card">
+          <img src="pain-point-icon-2.png" alt="Fluctuating Material Costs">
+          <h3>Fluctuating Material Costs</h3>
+        </div>
+        <div class="pain-point-card">
+          <img src="pain-point-icon-3.png" alt="Complex Regulatory Requirements">
+          <h3>Complex Regulatory Requirements</h3>
+        </div>
+        <div class="pain-point-card">
+          <img src="pain-point-icon-4.png" alt="Delays and Schedule Overruns">
+          <h3>Delays and Schedule Overruns</h3>
+        </div>
+        <div class="pain-point-card">
+          <img src="pain-point-icon-5.png" alt="Environmental Impact and Sustainability">
+          <h3>Environmental Impact and Sustainability</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-container">
+        <p class="testimonial-text">"AnyCompany Consulting's expert consulting services have been invaluable in streamlining our operations and optimizing our construction processes, resulting in increased efficiency and cost savings"</p>
+        <p class="testimonial-author">- John Smith, CTO from Example Corp Solutions</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Transform Your Construction Projects with AnyCompany Consulting</h2>
+      <a href="#" class="cta-button">Get Started</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>AnyCompany Consulting</p>
+    <p>123 Main Street, Anytown USA</p>
+    <p>Phone: (123) 456-7890 | Email: info@anycompany.com</p>
+    <p>&copy; 2023 AnyCompany Consulting. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript for Testimonials Section
+    const testimonialContainer = document.querySelector('.testimonial-container');
+    const testimonials = [
+      {
+        text: '"AnyCompany Consulting\'s expert consulting services have been invaluable in streamlining our operations and optimizing our construction processes, resulting in increased efficiency and cost savings"',
+        author: '- John Smith, CTO from Example Corp Solutions'
+      },
+      {
+        text: '"AnyCompany Consulting\'s top-notch consulting solutions have transformed our organization, enabling us to tackle complex challenges, fostering innovation, and propelling our growth to new heights."',
+        author: '- Alejandro Rosalez, COO of AnyDepartment Stores'
+      },
+      {
+        text: '"AnyCompany Consulting\'s strategic advisory services have been instrumental in strengthening our governance frameworks, enhancing transparency, and ensuring compliance with regulatory requirements, facilitating seamless public service delivery."',
+        author: '- Jane Doe, Governor of AnyGovernment'
+      }
+    ];
+
+    let currentIndex = 0;
+
+    function displayTestimonial() {
+      const { text, author } = testimonials[currentIndex];
+      testimonialContainer.innerHTML = `
+        <p class="testimonial-text">${text}</p>
+        <p class="testimonial-author">${author}</p>
+      `;
+      currentIndex = (currentIndex + 1) % testimonials.length;
+    }
+
+    setInterval(displayTestimonial, 5000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+- Use a color palette consisting of shades of blue (#0077b6, #023e8a, #03045e), black (#000000), Dark Green: #2d6a4f, and purple (#6b5b95).
+- Ensure sufficient color contrast (minimum 4.5:1 for normal text, 3:1 for large text) to make the content easier to read for users with visual impairments.
+- Use visible font sizes (minimum 16px for body text, minimum 36px for headings) and responsive units (e.g., rem, vw) for better visibility and readability on different screen sizes.
+- Follow semantic HTML structure and use appropriate HTML elements (e.g., header, nav, main, footer) for better accessibility and SEO.
+- Use a dark background color (e.g., #023e8a, #2d6a4f, #8b0000, or #6b5b95) for sections with white text, and ensure sufficient contrast with a semi-transparent overlay or add padding, if necessary.
+- Center or well-align icons with their corresponding text using flexbox or CSS grid, ensuring proper alignment and spacing.
+- Implement proper keyboard navigation and focus management with skip links, tabindex, and focus styles for better accessibility.
+- Write the JavaScript for the dynamic carosel / slider for the three testimonials. You will be the provided testimonials.
+- Ensure responsive layout and design elements using CSS media queries, flexbox, or CSS grid.

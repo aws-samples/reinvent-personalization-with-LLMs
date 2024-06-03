@@ -1,0 +1,10 @@
+1. Create an engaging header that will capture the customer's attention, using a dark background color (e.g., #023e8a, #2d6a4f, #8b0000, or #6b5b95) with white text.
+2. In the Hero Section, use an image related to the customer's profile, with a semi-transparent overlay or padding to ensure sufficient contrast for the white text on top of the image.
+3. Based on the customer's pain points and challenges, select the top 3 most relevant related offerings.
+4. Find appealing labels for the selected offerings, personalized for the customer, using white text on a dark background.
+5. For each offering, design an icon that visually represents the offering. Ensure icons should be consistent in colors and nicely blends in your design. Icons should be centered and aligned with the corresponding text label. 
+6. Present the offerings, icons, and labels in an appropriate rows or columns layout with the right padding and spacing, using flexbox or CSS grid for consistent alignment.
+7. Create an engaging call-to-action tailored to the customer, with a contrasting background color and centered text and icons.
+8. For the remaining sections of the website, follow general website design patterns, adhering to the color palette, contrasting best practices, and  icon - text alignments.
+9. You go back to your design and ensure that your images are coherent, ensure they are visually appealing and accurately represent the corresponding concepts. Icons are simple and recognizable designs that convey the intended meaning effectively.
+10. Finally, review your design from a formatting perspective to ensure you have used the right coloring, sectioning, sizes, and positioning for all elements you created.

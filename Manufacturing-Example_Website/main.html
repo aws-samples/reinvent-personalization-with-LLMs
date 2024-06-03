@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnyCompany Consulting Personalized Page</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #0d2b4f;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      max-height: 40px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #b3d1ff;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      background-image: linear-gradient(to bottom, rgba(13, 43, 79, 0.7), rgba(13, 43, 79, 0.7)), url('hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    /* Offerings Section Styles */
+    .offerings {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .offerings h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .offerings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+
+    .offering-item img {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .offering-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .offering-item p {
+      font-size: 1rem;
+    }
+
+    /* Pain-points Section Styles */
+    .pain-points {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .pain-points h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .pain-points-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 40px;
+    }
+
+    .pain-point-item img {
+      max-width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .pain-point-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .pain-point-item p {
+      font-size: 1rem;
+    }
+
+    /* Testimonials Section Styles */
+    .testimonials {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .testimonial-container {
+      background-color: #f5f5f5;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-text {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    /* CTA Section Styles */
+    .cta {
+      background-color: #0d2b4f;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #4caf50;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #0d2b4f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #b3d1ff;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .offerings-grid,
+      .pain-points-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="anycompany_logo.jpg" alt="AnyCompany Consulting">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Industries</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Driving Innovation in Electric Vehicle Manufacturing</h1>
+      <p>Unleash the power of sustainable mobility with AnyCompany Consulting's cutting-edge manufacturing solutions.</p>
+    </section>
+
+    <section class="offerings">
+      <h2>Our Tailored Offerings for Your Manufacturing Excellence</h2>
+      <div class="offerings-grid">
+        <div class="offering-item">
+          <img src="offering-icon-1.png" alt="Automation and Robotics">
+          <h3>Automation and Robotics</h3>
+          <p>Streamline your operations with our cutting-edge automation and robotics solutions, including Robotic Process Automation (RPA), industrial robotics, and connected manufacturing technologies.</p>
+        </div>
+        <div class="offering-item">
+          <img src="offering-icon-2.png" alt="Manufacturing Strategy and Transformation">
+          <h3>Manufacturing Strategy and Transformation</h3>
+          <p>Unlock your full potential with our strategic guidance on digital transformation, smart manufacturing, and Industry 4.0 initiatives, empowering you to stay ahead of the curve.</p>
+        </div>
+        <div class="offering-item">
+          <img src="offering-icon-3.png" alt="Engineering and Product Development">
+          <h3>Engineering and Product Development</h3>
+          <p>Accelerate your product development lifecycle with our expertise in New Product Introduction (NPI), Design for Manufacturing (DFM), and value engineering, ensuring seamless integration of innovation and efficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pain-points">
+      <h2>Addressing Your Manufacturing Challenges</h2>
+      <div class="pain-points-grid">
+        <div class="pain-point-item">
+          <img src="pain-point-icon-1.png" alt="Supply Chain Disruptions">
+          <h3>Supply Chain Disruptions</h3>
+          <p>Mitigate supply chain risks and ensure uninterrupted operations with our comprehensive supply chain optimization strategies and resilience solutions.</p>
+        </div>
+        <div class="pain-point-item">
+          <img src="pain-point-icon-2.png" alt="Battery Technology Limitations">
+          <h3>Battery Technology Limitations</h3>
+          <p>Overcome battery technology limitations with our cutting-edge research and development capabilities, enabling you to deliver longer-range, faster-charging, and more cost-effective electric vehicles.</p>
+        </div>
+        <div class="pain-point-item">
+          <img src="pain-point-icon-3.png" alt="Workforce Development and Training">
+          <h3>Workforce Development and Training</h3>
+          <p>Cultivate a skilled and knowledgeable workforce with our tailored training programs, apprenticeships, and mentorship initiatives, ensuring your team is equipped to drive innovation and excellence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-container">
+        <p class="testimonial-text">AnyCompany Consulting's expert consulting services have been invaluable in streamlining our operations and optimizing our construction processes, resulting in increased efficiency and cost savings.</p>
+        <p class="testimonial-author">- John Smith, CTO from Example Corp Solutions</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Accelerate Your Manufacturing Excellence</h2>
+      <p>Partner with AnyCompany Consulting to unlock the full potential of your manufacturing operations. Our expert consultants are ready to collaborate with you and develop tailored solutions that drive efficiency, innovation, and sustainable growth.</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 AnyCompany Consulting. All rights reserved.</p>
+    <p>
+      <a href="#">Address</a> | <a href="#">Phone</a> | <a href="#">Email</a>
+    </p>
+  </footer>
+
+  <script>
+    // Testimonials Carousel
+    const testimonialContainer = document.querySelector('.testimonial-container');
+    const testimonials = [
+      {
+        text: "AnyCompany Consulting's expert consulting services have been invaluable in streamlining our operations and optimizing our construction processes, resulting in increased efficiency and cost savings",
+        author: "- John Smith, CTO from Example Corp Solutions"
+      },
+      {
+        text: "AnyCompany Consulting's top-notch consulting solutions have transformed our organization, enabling us to tackle complex challenges, fostering innovation, and propelling our growth to new heights.",
+        author: "- Alejandro Rosalez, COO of AnyDepartment Stores"
+      },
+      {
+        text: "AnyCompany Consulting's strategic advisory services have been instrumental in strengthening our governance frameworks, enhancing transparency, and ensuring compliance with regulatory requirements, facilitating seamless public service delivery.",
+        author: "- Jane Doe, Governor of AnyGovernment"
+      }
+    ];
+
+    let currentIndex = 0;
+
+    function displayTestimonial() {
+      const { text, author } = testimonials[currentIndex];
+      testimonialContainer.innerHTML = `
+        <p class="testimonial-text">${text}</p>
+        <p class="testimonial-author">${author}</p>
+      `;
+
+      currentIndex = (currentIndex + 1) % testimonials.length;
+    }
+
+    setInterval(displayTestimonial, 5000);
+  </script>
+</body>
+</html>

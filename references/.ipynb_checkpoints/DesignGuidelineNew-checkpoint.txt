@@ -1,0 +1,21 @@
+- Use a color palette that aligns with the customer's industryd, ensuring sufficient color contrast for readability.
+- Use visible font sizes and responsive units for better visibility and readability across screen sizes.
+- Ensure the text fonts are visible and readable well contrasted with background.
+- Follow a semantic HTML structure and use appropriate HTML elements for accessibility and SEO.
+- Use appropriate background colors, overlays, or padding for sections with white text to ensure sufficient contrast.
+- Center align icons with their corresponding text, ensuring proper alignment and spacing.
+- All icons should be large enough to be visible by different devices.
+- For the testimonials section:
+  - It is a dynamic section which displays one testimonial at a time with smooth transitions to next one.
+  - Consider adding a subtle background to the container for better visibility and contrast.
+- Ensure responsive layout and design elements using CSS media queries, flexbox, or CSS grid.
+- Include the company's address, phone number, and email in the footer or appropriate section.
+- Incorporate subtle animations or transitions for an engaging user experience.
+- Optimize images and other assets for performance, using appropriate formats and compression techniques.
+- Ensure cross-browser compatibility and test the website on different browsers and devices.
+- Follow best practices for web performance, such as minifying CSS and JavaScript files, leveraging browser caching, and optimizing critical rendering path.
+- Implement lazy loading for resource-intensive elements to improve initial load times.
+- Consider using CSS preprocessors or CSS-in-JS solutions for better code organization and maintainability.
+- Implement form validation and error handling for user input fields or forms.
+- Ensure the website adheres to accessibility guidelines and follows best practices.
+- Make one final test to your website after deployment; check JavaScripts working, there are no inconsistencies, content are visible, all images and icons are well sized and visible and all elements are well aligned.
