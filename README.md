@@ -50,3 +50,11 @@ The blog post discusses potential enhancements and considerations for further im
 ## Conclusion
 
 This repository accompanies the AWS Machine Learning Blog post and demonstrates how to use Amazon Bedrock and task decomposition to build personalized website experiences that follow company guidelines and design systems. Refer to the blog post for detailed explanations and insights.
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
