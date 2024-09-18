@@ -2,13 +2,17 @@
 
 ## Introduction
 
-This repository contains the code and resources for the AWS Machine Learning Blog post titled "Reinvent personalization with Generative AI on Amazon Bedrock: Task decomposition for agentic workflows following human-curated guidelines". The post demonstrates a unique approach to using large language models (LLMs) for website personalization, tailored to a business's profile, offerings, and industry challenges.
+This repository contains the code and resources for the AWS Machine Learning Blog post titled [Reinvent personalization with Generative AI on Amazon Bedrock using Task decomposition for agentic workflows](https://aws.amazon.com/blogs/machine-learning/reinvent-personalization-with-generative-ai-on-amazon-bedrock-using-task-decomposition-for-agentic-workflows/). The post demonstrates a unique approach to using large language models (LLMs) for website personalization, tailored to a business's profile, offerings, and industry challenges. 
+
+We recommend you reading the blog post first.
 
 ## Solution Overview
 
 The solution decomposes the complex task of website personalization into smaller, more specific sub-tasks performed by specialized agents (LLMs). This approach ensures that the resulting website adheres to the company's guidelines, messaging, and related rules, while incorporating industry pain points, user experience (UX) and user interface (UI) design systems, and human-curated elements.
 
 The solution is demonstrated by applying it to a fictional business consulting company, OneCompany Consulting, which uses LLMs to build personalized marketing content, including text, images, and code for HTML, CSS, and JavaScript.
+
+This repository is for AWS Machine Learning Blog Post: https://aws.amazon.com/blogs/machine-learning/reinvent-personalization-with-generative-ai-on-amazon-bedrock-using-task-decomposition-for-agentic-workflows/
 
 ## Prerequisites
 
@@ -31,7 +35,7 @@ The notebook will guide you through the following steps:
 
 - Converting the client profile to natural language
 - Retrieving related industry insights using a Retrieval Augmented Generation (RAG) framework
-- Generating a detailed website description and visual element descriptions using a personalizer LLM (Claude Sonnet)
+- Generating a detailed website description and visual element descriptions using a personalizer LLM (Claude Sonnet or Haiku). 
 - Creating visual assets using an image generator LLM (Stable Diffusion)
 - Generating the HTML, CSS, and JavaScript code for the personalized website using a frontend developer LLM (Claude Haiku)
 - Deploying the generated website assets to an Amazon S3 bucket
